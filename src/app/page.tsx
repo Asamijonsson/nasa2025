@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchAPOD = async () => {
-      const apiKey = process.env.NEXT_PUBLIC_NASA_API_KEY || "DEMO_KEY";
+      const apiKey = process.env.NEXT_PUBLIC_NASA_API_KEY;
       if (!apiKey) {
         console.error("Missing NASA API key!");
         return;
